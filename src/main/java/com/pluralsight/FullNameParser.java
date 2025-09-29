@@ -8,13 +8,18 @@ public class FullNameParser {
 
         System.out.println("Hello, please enter your full name, first middle last: ");
         String fullname = input.nextLine();
-        // System.out.println(fullname.trim());
+        int fullnameL = fullname.split("\\ ").length;
+        System.out.println(fullnameL);
 
         String[] splitName = fullname.trim().split("\\ ");
-        String firstName = splitName[0];
+        String firstName = splitName[0] + "\n";
         String lastName = splitName[1];
 
-        System.out.print(firstName + " " + lastName);
+
+        System.out.print("First name: " + firstName);
+        //System.out.print("Middle name: " + Name);
+        System.out.print("Last name: " + lastName);
+
 
 
 
